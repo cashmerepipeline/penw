@@ -1,0 +1,39 @@
+{
+    "name": "PackageName",
+    "versions":
+    {
+        "version":
+        {
+            "dependents":
+            {
+                "dependent_package_name":"dependent_version_string"
+            },
+            "install":
+            {
+                "destination":"dest_path",
+                "tasks":
+                {
+                    "download":
+                    {
+                        "cmd":"cmd_name",
+                        "url":"url_to_the_package",
+                        "temp_path":"temp_path"
+                    },
+                    "unarchive":
+                    {
+                        "cmd":"cmd_name",
+                        "archive":"file_name"
+                    }
+                }
+            },
+            "build":
+            {
+        
+            },
+            "run":
+            {
+                "environment":["ar1", "arg2"]
+            }
+        }
+    }
+}
