@@ -1,0 +1,37 @@
+{
+    "PackageName": {
+        "version": {
+            "dependents": {
+                "dependent_package_name": {
+                    "version": "version_string"
+                }
+            },
+            "install": {
+                "destination": "dest_path",
+                "tasks": {
+                    "download": {
+                        "cmd": "cmd_name",
+                        "url": "url_to_the_package",
+                        "temp_path": "temp_path"
+                    },
+                    "unarchive": {
+                        "cmd": "cmd_name",
+                        "archive": "file_name"
+                    }
+                }
+            },
+            "build": {},
+            "run": {
+                "environments": [
+                    "env1",
+                    "env2"
+                ],
+                "command": "app_name",
+                "launch_args": [
+                    "arg1",
+                    "arg2"
+                ]
+            }
+        }
+    }
+}
